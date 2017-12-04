@@ -28,6 +28,7 @@ public class TestSession extends HttpServlet{
 		}
 		//设置日期格式
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		//设置第一次的时间
 		String createTimes = sdf.format(session.getCreationTime());
 		String lastTimes = sdf.format(session.getLastAccessedTime());
 		
